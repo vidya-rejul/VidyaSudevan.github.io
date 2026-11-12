@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A spiking transformer that estimates background light and restores underwater images from RGB and LAB inputs.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="snnTrans-DHZ | Vidya Sudevan">
+  <meta property="og:description" content="A spiking transformer that estimates background light and restores underwater images from RGB and LAB inputs.">
+  <title>snnTrans-DHZ | Vidya Sudevan</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap top"><a class="brand" href="index.html">Vidya Sudevan</a><nav class="nav desktop-nav" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="demonstrations.html">Demonstrations</a><a href="academic-journey.html">Academic Journey</a><a href="teaching.html">Teaching</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav><details class="mobile-nav"><summary>Menu</summary><nav class="nav" aria-label="Primary mobile"><a href="index.html">Home</a><a href="about.html">About</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="demonstrations.html">Demonstrations</a><a href="academic-journey.html">Academic Journey</a><a href="teaching.html">Teaching</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav></details></div></header>
+<main id="main" tabindex="-1">
+<div class="wrap content"><header class="page-head"><p class="back-link"><a href="research.html">← Research</a></p><h1>snnTrans-DHZ</h1><p class="lede">A spiking transformer that estimates background light and restores underwater images from RGB and LAB inputs.</p></header><div class="prose">
+<p class="source-line">Neuromorphic Computing and Engineering · 2026</p>
+<h2>Method</h2><p>snnTrans-DHZ uses adaptive-threshold spiking neurons and processes RGB and LAB sequences jointly. It estimates image-formation terms and background light, then reconstructs a dehazed image. The published model has 0.57 million parameters.</p>
+<h2>Evaluation</h2><p>Table 3 compares both models trained and tested on UIEB and EUVP. Inference energy is analytically estimated.</p>
+<div class="table-box"><table><caption class="fine">snnTrans-DHZ compared with UIE-SNN, Table 3.</caption><thead><tr><th scope="col">Dataset</th><th scope="col">Model</th><th scope="col">PSNR (dB)</th><th scope="col">SSIM</th><th scope="col">Est. energy (J)</th></tr></thead><tbody>
+<tr><th scope="row">UIEB</th><td>snnTrans-DHZ</td><td>21.6773</td><td>0.8795</td><td>0.0151</td></tr>
+<tr><th scope="row">UIEB</th><td>UIE-SNN</td><td>17.7801</td><td>0.7454</td><td>0.1327</td></tr>
+<tr><th scope="row">EUVP</th><td>snnTrans-DHZ</td><td>23.4562</td><td>0.8439</td><td>0.0159</td></tr>
+<tr><th scope="row">EUVP</th><td>UIE-SNN</td><td>23.1725</td><td>0.7890</td><td>0.0732</td></tr></tbody></table></div>
+<h2 id="figures">Figures</h2><figure class="figure"><a href="assets/dehazing-architecture.webp"><img src="assets/dehazing-architecture.webp" alt="Diagram of the snnTrans-DHZ architecture from RGB and LAB inputs to reconstructed image" loading="lazy"></a><figcaption>Figure 3, Sudevan et al., <cite>Spiking transformer with learnable threshold mechanism for underwater image dehazing to aid vision-based navigation</cite>, Neuromorphic Computing and Engineering 6 (2026), 014010. <a href="https://doi.org/10.1088/2634-4386/ae41e1">DOI</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Figure cropped from the paper.</figcaption></figure>
+<figure class="figure"><a href="assets/dehazing-benchmark.webp"><img src="assets/dehazing-benchmark.webp" alt="Qualitative comparison on UIEB test images with competing methods" loading="lazy"></a><figcaption>Figure 5, Sudevan et al., <cite>Spiking transformer with learnable threshold mechanism for underwater image dehazing to aid vision-based navigation</cite>, Neuromorphic Computing and Engineering 6 (2026), 014010. <a href="https://doi.org/10.1088/2634-4386/ae41e1">DOI</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Figure cropped from the paper.</figcaption></figure>
+<h2>Publication and code</h2><p>First and corresponding author. <a href="https://doi.org/10.1088/2634-4386/ae41e1">Spiking transformer with learnable threshold mechanism for underwater image dehazing to aid vision-based navigation</a>. <a href="https://github.com/vidya-rejul/snnTrans-DHZ">Source code on GitHub</a>.</p></div></div>
+</main>
+<footer class="site-footer"><div class="wrap footer-inner"><span>Vidya Sudevan · Khalifa University</span><div><a href="https://scholar.google.com/citations?user=tbuK1owAAAAJ">Google Scholar</a><a href="https://orcid.org/0009-0002-2734-624X">ORCID</a><a href="contact.html">Contact</a></div></div></footer>
+</body>
+</html>
