@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A hybrid visual–inertial odometry model that combines convolutional visual features with spiking temporal processing for underwater pose estimation.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NeuroVIO | Vidya Sudevan">
+  <meta property="og:description" content="A hybrid visual–inertial odometry model that combines convolutional visual features with spiking temporal processing for underwater pose estimation.">
+  <title>NeuroVIO | Vidya Sudevan</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap top"><a class="brand" href="index.html">Vidya Sudevan</a><nav class="nav desktop-nav" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="demonstrations.html">Demonstrations</a><a href="academic-journey.html">Academic Journey</a><a href="teaching.html">Teaching</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav><details class="mobile-nav"><summary>Menu</summary><nav class="nav" aria-label="Primary mobile"><a href="index.html">Home</a><a href="about.html">About</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="demonstrations.html">Demonstrations</a><a href="academic-journey.html">Academic Journey</a><a href="teaching.html">Teaching</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav></details></div></header>
+<main id="main" tabindex="-1">
+<div class="wrap content"><header class="page-head"><p class="back-link"><a href="research.html">← Research</a></p><h1>NeuroVIO</h1><p class="lede">A hybrid visual–inertial odometry model that combines convolutional visual features with spiking temporal processing for underwater pose estimation.</p></header><div class="prose">
+<p class="source-line">IEEE Journal of Oceanic Engineering · Early access, 2026</p>
+<h2>Method</h2><p>A conventional CNN extracts visual features. Adaptive leaky integrate-and-fire neurons encode visual and inertial features as spikes. A spiking LSTM models temporal dependencies, and a spiking regression head estimates six-degree-of-freedom pose.</p>
+<figure class="figure" id="architecture"><a href="assets/neurovio-architecture.webp"><img src="assets/neurovio-architecture.webp" alt="NeuroVIO architecture with camera and IMU inputs, separate feature encoders, a spiking LSTM, and six-degree-of-freedom pose output" loading="lazy"></a><figcaption>Figure 1, Sudevan et al., <cite>NeuroVIO: A Hybrid Neural Network Framework for Visual–Inertial Odometry Estimation</cite>, IEEE Journal of Oceanic Engineering (2026). <a href="https://doi.org/10.1109/JOE.2026.3708049">DOI</a>. © 2026 IEEE. Figure cropped from the paper.</figcaption></figure>
+<h2>Evaluation</h2><p>On AQUALOC, the adaptive-threshold model reduced estimated inference energy by 80.4% relative to the non-spiking baseline under the paper’s 45 nm CMOS operation-cost model. Pose error varied by sequence and metric. On h07, translational ATE was 0.0304 m for the adaptive model and 0.0220 m for the baseline. Angular ATE was 1.3024° and 2.1366°, respectively.</p>
+<h2>Publication</h2><p>First and corresponding author. <a href="https://doi.org/10.1109/JOE.2026.3708049">NeuroVIO: A Hybrid Neural Network Framework for Visual–Inertial Odometry Estimation</a>.</p></div></div>
+</main>
+<footer class="site-footer"><div class="wrap footer-inner"><span>Vidya Sudevan · Khalifa University</span><div><a href="https://scholar.google.com/citations?user=tbuK1owAAAAJ">Google Scholar</a><a href="https://orcid.org/0009-0002-2734-624X">ORCID</a><a href="contact.html">Contact</a></div></div></footer>
+</body>
+</html>
